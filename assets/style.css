@@ -43,9 +43,7 @@ nav {
 
 
 /* Navbar */
-.navbar {
-  z-index: 1030; /* fixed-top stays on top */
-}
+
 
 /* Content + hero scrolls above background but under navbar */
 .content-wrapper {
@@ -61,23 +59,26 @@ main {
   margin-top: 1rem;
 }
 #hero img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
+  
 }
 
-header a {
-    text-decoration: none;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 0.8rem;            
-    max-width: 60%;
- 
-}   
 .navbar-toggler {
-    flex-shrink: 0;
+    padding: 0 0.2rem;
 }
+
+nav li {
+    font-size: 0.9rem;
+    }
+
 
 
 nav li :hover {
@@ -130,163 +131,6 @@ nav li :hover {
 
 }
 
-@media only screen and (min-width: 340px) and ( max-width: 600px) {
-    .banner {
-        display: none;
-    
-    }
-   
-/* index - for mobile */
-
-.wrapper {
-    width: 100%;
-    margin: 0 auto;
-    
-}
-
-.info-me h2 {
-    padding: 10px 30px 10px;
-    color: rgb(20, 24, 31);
-    line-height: 40px;
-    font-size: 20px;
-    margin-left: 20px;
-    
-}
-
-.info-me p {
-   padding: 0px 30px 8px;
-   color: rgb(20, 24, 31);
-   line-height: 20px;
-   font-size: 14px;
-   margin-left: 20px;
-   margin-right: 20px;
-   margin-bottom: 20px;
-
-}
-
-.img-me {
-    display: flex;
-    width: 100%;
-    max-width: 320px;
-    box-shadow:  8px 8px 5px #929dae;
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 50px;
-    
-}
-button {
-    position: relative;
-    left: 50px;
-    top: 50px;
-    border: 1px solid rgb(186, 186, 186);
-    border-radius: 15px;
-    box-shadow: 6px 6px 5px #929dae;
-    background-color:whitesmoke;
-    max-width: 100px;
-    margin-bottom: 20px;
-}
-
-
-button a {
-    text-decoration: none ;
-    font-weight: 600;
-    padding: 10px 10px 4px;
-    font-size: 12px;
-}
-button :hover {
-    background-color:#b5d6e6;
-    border: 1px #8b8b96;
-    border-radius: 15px;
-    padding: 2px 5px;
-    border: 1px solid rgb(186, 186, 186);
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* float: left; */
-    justify-items: center;
-    margin: auto;
-    cursor: pointer;
-    margin-bottom: 50px;
- }
-
-  h3 {
-    margin-left: 30px;
-    padding-top: 30px;
-   
-  }
-  
-
-.web {
-    
-    width: 80%;
-    max-width: 400px;
-    height: 250px;
-    border: 2px solid green;
-    margin-bottom: 10px;
-    margin-top: 40px;
-    margin-left: 30px;
-   
-}
-
-.python {
-    max-width: 400px;
-    width: 80%;
-    height: 220px;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-
-}
-.casamenu {
-   width: 80%;
-   max-width: 400PX ;
-   margin-top: 30px;
-   margin-bottom: 10PX;
-   margin-left: 30px;
-   height: 210px;
-
-}
-figcaption {
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
- 
-
-
-    h5 {
-        display: none;
-    }
-    .social  {
-        display: flex;
-        /* margin-top: 2px; */
-        margin-bottom: 20px;
-        margin-right: 20px;
-        justify-content: space-around;
-        
-    }
-    .social a {
-        text-decoration: none;
-    }
-    .fa-facebook {
-        width: 18px;
-    }
-    .fa  {
-        font-size: 10px;
-        background-color: black;
-        color: white;
-        padding: 4px;
-        border-radius: 3px;
-    
-    }
-}
 
 
 /* tablet size body styling - dont need to include all the code just keep what you are changing and delete the rest */
