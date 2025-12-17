@@ -1,0 +1,542 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-image: url("skyblue.jpg");
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    height: 100%;
+    padding-top: 70px;
+   
+   
+}
+
+nav {
+    background-color: #edf2f5;
+    
+}
+/* Parallax background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* behind everything */
+}
+
+
+/* Navbar */
+.navbar {
+  z-index: 1030; /* fixed-top stays on top */
+}
+
+/* Content + hero scrolls above background but under navbar */
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+   /* offset for navbar */
+}
+
+/* Hero section */
+
+
+main {
+  margin-top: 1rem;
+}
+#hero img {
+  width: 100%;
+  height: auto;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 0.8rem;            
+    max-width: 60%;
+ 
+}   
+.navbar-toggler {
+    flex-shrink: 0;
+}
+
+
+nav li :hover {
+    
+    background-color:#b5d6e6 ;
+    color:rgb(15, 12, 12);
+    border: 2px #8b8b96;
+    box-shadow:10px 10px 5px #929dae;
+    border-radius: 15px;
+    padding: 0;
+    
+}
+
+
+#hero {
+  position: relative;   /* or height: auto if image controls it */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.web {
+  
+   height: 365px;
+   padding: 20px 15px 20px;
+   }
+       
+   .python { 
+      padding: 20px 15px 20px;
+      
+   }
+
+
+.web .python .casamenu {
+    margin-bottom: auto;
+    width: 100%;
+    box-shadow:  8px 8px 5px #929dae;
+
+}
+
+@media only screen and (min-width: 340px) and ( max-width: 600px) {
+    .banner {
+        display: none;
+    
+    }
+   
+/* index - for mobile */
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.info-me h2 {
+    padding: 10px 30px 10px;
+    color: rgb(20, 24, 31);
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+.info-me p {
+   padding: 0px 30px 8px;
+   color: rgb(20, 24, 31);
+   line-height: 20px;
+   font-size: 14px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+
+}
+
+.img-me {
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    box-shadow:  8px 8px 5px #929dae;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    
+}
+button {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px #929dae;
+    background-color:whitesmoke;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+
+button a {
+    text-decoration: none ;
+    font-weight: 600;
+    padding: 10px 10px 4px;
+    font-size: 12px;
+}
+button :hover {
+    background-color:#b5d6e6;
+    border: 1px #8b8b96;
+    border-radius: 15px;
+    padding: 2px 5px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* float: left; */
+    justify-items: center;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 50px;
+ }
+
+  h3 {
+    margin-left: 30px;
+    padding-top: 30px;
+   
+  }
+  
+
+.web {
+    
+    width: 80%;
+    max-width: 400px;
+    height: 250px;
+    border: 2px solid green;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+   
+}
+
+.python {
+    max-width: 400px;
+    width: 80%;
+    height: 220px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+
+}
+.casamenu {
+   width: 80%;
+   max-width: 400PX ;
+   margin-top: 30px;
+   margin-bottom: 10PX;
+   margin-left: 30px;
+   height: 210px;
+
+}
+figcaption {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+ 
+
+
+    h5 {
+        display: none;
+    }
+    .social  {
+        display: flex;
+        /* margin-top: 2px; */
+        margin-bottom: 20px;
+        margin-right: 20px;
+        justify-content: space-around;
+        
+    }
+    .social a {
+        text-decoration: none;
+    }
+    .fa-facebook {
+        width: 18px;
+    }
+    .fa  {
+        font-size: 10px;
+        background-color: black;
+        color: white;
+        padding: 4px;
+        border-radius: 3px;
+    
+    }
+}
+
+
+/* tablet size body styling - dont need to include all the code just keep what you are changing and delete the rest */
+
+@media only screen and (min-width: 768px) {
+    
+    body {
+        padding-top: 50px;
+    }
+    .banner {
+        width: 100%;
+        height: 250px;
+    
+    }
+
+
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .info-me h2 {
+        padding: 20px 0px 0px;
+        margin-left: 20px;
+            
+   }
+   
+   .info-me p {
+       padding: 20px 0px 0px;
+       margin-left: 20px;
+       margin-bottom: 10px;
+       
+   }
+   
+   .img-me {
+        
+        box-shadow: 10px 10px 10px 5px #929dae;
+        border-radius: 50px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+   }
+  
+   button {
+    position: relative;
+    top: 50px;
+    left: 200px;
+    border: outset 1px rgb(186, 186, 186);
+    border-radius: 15px;
+    box-shadow: 4px 4px 3px #929dae;
+    
+   }
+
+   button a {
+    text-decoration: none ;
+    font-weight: 600;
+    padding: 10px 10px 5px;
+    font-size: 16px;
+    color: rgb(25, 26, 27);
+    
+}
+   
+   h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.web, .python, .casamenu {
+    /* margin: auto; */
+    width: 600px;
+    display: flex;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+    margin-top: 40px;
+    flex-direction: row;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav li {
+    margin-right: 20px;
+}
+    
+.projects {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+figure {
+    margin-top: 1px;
+    
+}
+figcaption {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    width: 80%;
+    
+    
+}
+
+}
+
+
+/* styling body for desktop */
+
+@media only screen and (min-width: 992px) and (orientation: landscape) 
+{
+
+.wrapper {
+    width: 100%;
+}
+
+nav {
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.info-me {
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+}
+.info-me h2 {
+    padding: 0px 0px 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+        
+}
+
+.info-me p {
+   padding: 2px 0px 5px;
+   font-size: 13px;
+   
+}
+
+
+.img-me {
+    padding-top: 0px;
+    margin-top: 80px;
+    max-width: 340PX;
+    width: 50%;
+    box-shadow: 10px 10px 10px 5px #929dae; 
+    
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap; 
+    /* border: 2px solid blue; */
+    width: 100%;  
+    margin-top: 30px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+figure {
+    margin-top: 2px;
+   
+}
+figcaption {
+    
+    font-size: 12px;
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    max-width: 900px; 
+    
+
+}
+h3 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: center;
+    font-size: 18px;
+    
+}
+
+button {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    border: outset 1px rgb(186, 186, 186);
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px #929dae;
+    background-color:whitesmoke;
+    max-width: 500px;  
+    
+   
+}
+
+button :active {
+    color: grey;
+}
+button a {
+    text-decoration: none ;
+    font-weight: 600;
+    padding: 10px 10px 5px;
+    font-size: 15px;
+    color: rgb(25, 26, 27);
+}
+button :hover {
+    background-color:#b5d6e6;
+    border: 1px #8b8b96;
+    border-radius: 15px;
+    padding: 2px 10px;
+    border: 1px solid rgb(186, 186, 186);  
+    
+}
+.web {
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 0px;
+    width: 330px;
+    
+}
+
+
+.python {
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    width: 330px;
+
+}
+
+.casamenu {
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 330px;
+   
+}
+
+
+
+
+.python, .web, .casamenu {
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 5px  #929dae;
+    padding: 0px;
+    cursor: pointer;
+} 
+}  
+
