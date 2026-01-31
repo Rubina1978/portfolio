@@ -15,6 +15,7 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- stylesheet -->
+    
      <link rel="stylesheet" type="text/css" href="assets/style.css"/>
     
 </head>
@@ -27,12 +28,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto text-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,45 +60,38 @@
     </div> -->
   </div>
 
-  <main class="container">
-    <article class="info-me">
-  <p>
-    I'm at the beginning of my coding journey, so my portfolio may still look simple and have just a few projects — but each reflects my growth, dedication, and curiosity. It’s far from perfect, and that’s okay. I’m taking one step at a time — to a better future and a better version of myself.
-     </p>
-     <p>My background is from diverse customer service roles mostly within travel and hospitality, which is still something I am passionate about, however it is no longer the only field of my passion.</p>
-      <p>I started coding in December 2024 during my time off work and recovering from surgery. I joined a 3-week Level 2 course in web development (HTML, CSS) and game development with Python. I wanted to use that time in a meaningful way and pick up new skills to keep up with today’s fast-changing tech world.</p>
-      <P>I have completed other courses, but Coding completely swept me away and opened up a new, creative, and technical side of me I hadn’t tapped into before... This portfolio is a work in progress, just like me. If you're curious about my journey or want to see how far I've come, feel free to explore — and if you'd like to learn more, just click the button below<button><a href="page2.html" width:100%>More</a></button>
-      </P>
+  <div class="container mt-4 mx-auto">
+    <div class="row align-items-center">
+    
+    <!-- IMAGE COLUMN -->
+    <div class="col-12 col-lg-6">
+      <img 
+        src="me.jpg" 
+        class="img-me img-fluid rounded w-100 object-fit-cover"
+        alt="Hana Rubesova"
+      >
+    </div>
 
-  
- 
- </article>
- 
-
-  <img class="img-me" src="me.jpg" width="100%" alt="Hana Rubesova">
-
-
-<h3>My Projects</h3>
-
-<div class="projects" >
-
-
-  <div>
-    <figure>
- <a href="page3.html"><img class="web"src="first_web_pic.png" width="100%" alt="first website"></a></figure><figcaption>My first Website</figcaption>
+    <!-- TEXT COLUMN -->
+    <div class="col-12 col-lg-6 mt-4">
+      <article class="info-me">
+        <h2>Welcome!</h2>
+        <p>
+          I’m at the beginning of my journey into software development, currently pursuing a Level 5 Diploma in Web Application Development with Code Institute. I am strengthening my skills in HTML, CSS, Bootstrap, and JavaScript while building practical projects that showcase my growing capabilities.
+          </p>
+          <p>
+            With a background in customer service within the travel and hospitality industry, I bring strong communication, adaptability, and problem-solving skills to my work in tech. I began coding in December 2024 during a period of recovery, and quickly discovered a passion for creating and problem-solving that continues to grow.
+          </p>
+          <p>This portfolio highlights my progress so far and my commitment to learning, improving, and developing as a web developer. If you’re curious about my journey or want to see my work, feel free to explore — and if you’d like to learn more, click the button below.</p>
+          <a href="page2.html" class="btn btn-primary custom-btn">
+          More
+        </a>
+      </article>
+    </div>
+    </div>
   </div>
 
-  <div>
-    <figure>
- <a href="page3.html"><img class="python" src="Python_game.png"  width="100%" alt="python game"></a></figure><figcaption>Python group project "Fire and Ice"</figcaption>
-</div>
-<div>
-  <figure>
-  <a href="page3.html"><img class="casamenu" src="casa_andina.png" width="100%" alt="menu"></a></figure><figcaption>Peruvian Restaurant Menu</figcaption>
   
-</div>
-</div>
-</div>
   </main>
    <footer id="contact" class=" text-center pt-4 pb-4 mt-auto">
   <div class="container mx-auto">
