@@ -111,12 +111,13 @@ nav li {
   z-index: 2;
 }
 
-.container {
-    width: 80%;
+.container,
+.container-projects {
+    max-width: 80%;
     background-color: rgba(240, 248, 255, 0.3);
     backdrop-filter: blur(8px);
     padding: 0 2rem;
-    
+    margin: 0 auto;
    
 }
 
@@ -176,6 +177,7 @@ nav li {
    .info-me {
        display: flex;
        flex-direction: column;
+       justify-content: center;
    }
    
    .img-me {
@@ -278,12 +280,17 @@ nav {
 }
 
 
+
+
 .img-me {
    
     margin: 0.5rem;
     max-width: 350px;
     box-shadow: 10px 10px 10px 5px #929dae; 
     max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
