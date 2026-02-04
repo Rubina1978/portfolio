@@ -19,15 +19,16 @@ body {
     background-position:top;
     background-attachment: fixed;
     height: 100%;
-    padding-top: 70px;
+    padding-top: 50px;
    
    
 }
 
-nav {
+nav, footer {
     background-color: #f5f5f5;
     
 }
+
 /* Parallax background */
 .background {
   position: fixed;
@@ -61,6 +62,7 @@ main {
 #hero img {
   /* width: 100%; */
   height: auto;
+ 
   
 }
 
@@ -81,7 +83,7 @@ nav li {
     width: 80px;
     }
 
-.navbar-nav li :hover {
+.navbar-nav li:hover {
     
     background-color:#b5d6e6 ;
     color:rgb(15, 12, 12);
@@ -89,7 +91,7 @@ nav li {
     box-shadow:10px 10px 5px #929dae;
     border-radius: 15px;
     width: 100%;
-    padding: 10px 25px 10px;
+    padding: 1px 2px 1px;
     
 }
 
@@ -114,36 +116,126 @@ nav li {
 .container,
 .container-projects {
     max-width: 80%;
-    background-color: rgba(240, 248, 255, 0.3);
+    background-color: rgba(240, 248, 255, 0.5);
     backdrop-filter: blur(8px);
-    padding: 0 2rem;
     margin: 0 auto;
+    border-radius: 5px;
+    
    
 }
 
-
-.web {
-  
-   height: 365px;
-   padding: 20px 15px 20px;
+.img-me {
+        
+        box-shadow: 10px 10px 10px 5px #929dae;
+        border-radius: 50px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: auto;
+            
    }
-       
-   .python { 
-      padding: 20px 15px 20px;
-      
+
+   .info-me {
+    font-size: 0.6rem;
    }
 
+h2 {
+    font-size: 1.1rem;
+}
+h3 {
+   
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
 
-.web .python .casamenu {
-    margin-bottom: auto;
-    width: 100%;
-    box-shadow:  8px 8px 5px #929dae;
+.custom-btn {
+    
+    border: outset 1px rgb(186, 186, 186);
+    border-radius: 4px;
+    box-shadow: 4px 4px 3px #929dae;
+   }
 
+.custom-btn:hover,
+.custom-btn:active,
+.custome-btn:focus-visible {
+    background-color:#b5d6e6!important;
+    border: 1px #8b8b96;
+    border-radius: 15px;
+    padding: 7px 10px 7px;
+    border: 1px solid rgb(186, 186, 186);  
+    color:rgb(25, 26, 27)!important
+    
+}
+   
+figcaption {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.1rem;
+    border-radius: 5px;
+}
+ 
+figcaption h5 {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    font-weight: 600;
+    
+}
+
+figcaption h6 {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.card  {
+    margin-bottom: 1rem;
 }
 
 
 
-/* tablet size body styling - dont need to include all the code just keep what you are changing and delete the rest */
+.custom-btn {
+    border: outset 1px rgb(186, 186, 186);
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px #929dae;
+    background-color:whitesmoke; 
+    color:rgb(25, 26, 27);
+    padding: 4px 6px 4px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+footer a{
+    color:rgb(25, 26, 27);
+    font-size: 0.8rem;
+
+}
+
+footer h5 {
+    font-size: 0.8rem;
+}
+
+ .socials i {
+    
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 2px;
+   font-size: 0.9rem;
+   
+}
+.socials i:hover,
+footer a:hover {
+    color:#616e74;
+    
+    
+
+}
+
+
+/* tablet size body styling - don't need to include all the code just keep what you are changing and delete the rest */
 
 @media only screen and (min-width: 768px) {
     
@@ -157,43 +249,41 @@ nav li {
     }
 
 
-    .wrapper {
+    /* .wrapper {
         width: 600px;
         margin: 0 auto;
     }
-    .info-me h2 {
-        padding: 20px 0px 0px;
-        margin-left: 20px;
-            
-   }
+     */
    
    .info-me p {
-       padding: 20px 0px 0px;
-       margin-left: 20px;
-       margin-bottom: 10px;
+      font-size: 0.8rem;
+       
        
    }
 
+    .info-me h2 {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
    .info-me {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-   }
-   
-   .img-me {
-        
-        box-shadow: 10px 10px 10px 5px #929dae;
-        border-radius: 50px;
-        
+       display: block;
+       margin: 0 auto;
+       padding: 1.6rem;
+       
+       
    }
 
-   .custom-btn {
-    margin-left: auto;
-    margin-right: 1rem;
-    border: outset 1px rgb(186, 186, 186);
-    border-radius: 15px;
-    box-shadow: 4px 4px 3px #929dae;
+   .img-me {
+    max-width: 400px;
+    margin-top: 1.2rem;
+    
    }
+   
+   .container {
+    max-width: 700px;
+   }
+   
 
    .custom-btn a {
     text-decoration: none;
@@ -208,7 +298,8 @@ nav li {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 1.2rem;
+    
 }
 .web, .python, .casamenu {
     /* margin: auto; */
@@ -228,20 +319,10 @@ nav li {
 }
     
 .projects {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
+    margin: 0 auto;
 }
 figure {
-    margin-top: 1px;
-    
-}
-figcaption {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
-    width: 80%;
-    
+    margin-top: 0.4rem;
     
 }
 
@@ -264,92 +345,93 @@ nav {
 
 
 .info-me h2 {
-    padding: 0px 0px 4px;
-    margin-top: 1rem;
-    margin-bottom: 10px;
-    font-size: 18px;
+    /* padding: 0px 0px 4px; */
+    /* margin-top: 1rem; */
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
         
 }
 
 .info-me p {
-   padding: 5px 0px 5px;
+  margin-right: 1.2rem;
    font-size: 0.8rem;
-   
-  
-   
+ 
 }
 
+.container, .container-projects {
+    max-width: 960px;
+    padding: 0.5rem;
 
+}
 
 
 .img-me {
    
-    margin: 0.5rem;
-    max-width: 350px;
+    margin:auto;
+    max-width: 400px;
     box-shadow: 10px 10px 10px 5px #929dae; 
-    max-height: 350px;
+    max-height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
+   
     
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap; 
-    /* border: 2px solid blue; */
     width: 100%;  
-    margin-top: 30px;
-    margin-bottom: 50px;
     justify-content: space-between;
 }
 figure {
-    margin-top: 2px;
+    margin-top: 0.5rem;
    
 }
-figcaption {
+figcaption h5 {
     
-    font-size: 12px;
-    margin-left: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    max-width: 900px; 
-    
+    font-size: 1.1rem;   
 
 }
+
+
+.info-me h2 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
 h3 {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    padding-top: 0.8rem;
     display: center;
-    font-size: 18px;
+    font-size: 1.5rem;
     
 }
+
 
 .custom-btn {
-    border: outset 1px rgb(186, 186, 186);
-    border-radius: 15px;
-    box-shadow: 8px 8px 5px #929dae;
-    background-color:whitesmoke; 
+    font-size: 0.9rem;
+     padding: 5px 8px 5px;
+     margin-bottom: 0.5rem;
+     
+     
+
+}
+
+footer a{
     color:rgb(25, 26, 27);
-    padding: 5px 8px 5px;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
     
+
 }
 
-
-.custom-btn:hover,
-.custom-btn:active,
-.custome-btn:focus-visible {
-    background-color:#b5d6e6!important;
-    border: 1px #8b8b96;
-    border-radius: 15px;
-    padding: 7px 10px 7px;
-    border: 1px solid rgb(186, 186, 186);  
-    color:rgb(25, 26, 27)!important
+ .socials i {
     
-}
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 2px;
+   font-size: 1.4rem;
+ }  
+
 .web {
     height: 260px;
     margin-top: 30px;
@@ -390,4 +472,3 @@ h3 {
     cursor: pointer;
 } 
 }  
-
