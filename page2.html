@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
 
-   <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- stylesheet -->
-  <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+    
+     <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <header>
-  
-    <!-- <div class="wrapper"> -->
-    <div id="brand"><a href="/">Hana Rubesova</a></div>
-      <nav>      
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">About</a></li>
-        <li><a href="page3.html">Projects</a></li>
-        <li><a href="page4.html">Contact</a></li>   
+
+  <nav class="navbar navbar-expand-lg bg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Hana Rubesova</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
       </ul>
-    </nav>
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-      <div class="bar4"></div>
-      <ul class="mobile-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">About</a></li>
-        <li><a href="page3.html">Projects</a></li>
-        <li><a href="page4.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-    <script src="index.js"></script>
-    
-<P>hello</P>
-
-
-
-  <footer class="container mt-auto">
-    
-   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-   </style>
   
-  <ul>
-    <div class="footer-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="page2.html">About</a></li>
-    <li><a href="page3.html">Projects</a></li>
-    <li><a href="page4.html">Contact</a></li>
     </div>
-    </ul>
-
-    <ul>
-    <div>
-    <h5>CONNECT WITH ME</h5>
-    <div class="social">
-    
-    <li><a href="#" target="_blank" class="fa fa-facebook" alt="Facebook logo"></a></li>
-    
-    <li><a href="https://www.linkedin.com/in/hana-rubesova-6338b9104/" target="_blank" class="fa fa-linkedin" alt="LinkedIn logo"></a></li>
-
-    <li><a href="https://www.instagram.com/hana_rubina_2712/" target="_blank" class="fa fa-instagram" alt="Instagram logo"></a></li>
-
-    <li><a href="https://github.com/Rubina1978" target="_blank" class="fa fa-github" alt="Github logo"></a></li>
   </div>
+</nav>
+ 
+<footer id="contact" class="text-center pb-2 mt-auto">
+  <div class="container-fluid mx-auto mt-4">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="email-block">
+        <h5>Email me</h5>
+        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:rubesovah@seznam.cz"  target="_blank" rel="noopener noreferrer" class="text-decoration-none">rubesovah@seznam.cz</a>
+      </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <h5>Visit me on socials</h5>
+        <a href="https://www.instagram.com/" class="socials" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in new tab)"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="socials" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://x.com/" class="socials" target="_blank" rel="noopener" aria-label="Visit our X feed (opens in new tab)"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
   </div>
-  </ul>
-  
 </footer>
+      
+
+
 <!-- bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <!-- font awesome -->
  <script src="https://kit.fontawesome.com/68be089ad3.js" crossorigin="anonymous"></script>
+<script src="assets/index.js"></script>
 </body>
 </html>
