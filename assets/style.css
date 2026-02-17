@@ -118,7 +118,7 @@ nav li {
     max-width: 80%;
     background-color: rgba(240, 248, 255, 0.5);
     backdrop-filter: blur(8px);
-    margin: auto;
+    margin-bottom: 5px;
     border-radius: 5px;
     
    
@@ -157,9 +157,33 @@ h4 {
     max-width: 40px;
 }
 
+.project-info p {
+    font-size: 0.9rem;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
+.links a {
+    align-items: center;
+    justify-content: center;
+    padding: 3px 5px;
+}
 
+.links a{
+   display: inline-flex;
+   border-color: white;
+   background-color: white;
+   border-radius: 7px;
+   color: rgb(25, 26, 27) ;
+   text-decoration: none;
+}
 
+.links i {
+    margin-right: 5px;
+}
 
 .custom-btn {
     
@@ -196,6 +220,11 @@ figcaption h5 {
     
 }
 
+figure {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 figcaption h6 {
     font-size: 0.7rem;
     font-style: italic;
@@ -213,7 +242,6 @@ figcaption h6 {
     position: relative;
     width: 100%;
     display: block;
-
     z-index: 1;
     
 
@@ -290,14 +318,17 @@ figcaption h6 {
     font-size: 0.8rem;
 }
 
+
 footer a{
     color:rgb(25, 26, 27);
     font-size: 0.8rem;
+   
 
 }
 
 footer h5 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
  .socials i {
@@ -427,11 +458,7 @@ nav {
     padding: 0.4rem;
     margin: auto;
 }
-.links a{
-   display: inline-flex;
-   border-color: white;
-   background-color: white;
-}
+
 
 
 
@@ -479,6 +506,7 @@ h3 {
     
 }
 
+
 a {
     text-decoration: none;
 }
@@ -487,24 +515,12 @@ a {
     justify-content: center;
     gap: 15px;
 }
+
 .links a {
     align-items: center;
     justify-content: center;
     padding: 5px;
 }
-
-/* .logo {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: 8px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    padding: 4px; 
-    
-}
-.tech-label {
-    background-color: aliceblue;
-} */
 
 h4 {
     font-size: 0.9rem;
