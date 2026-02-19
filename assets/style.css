@@ -136,8 +136,13 @@ nav li {
             
    }
 
-   .info-me {
+   .info-me p{
     font-size: 0.7rem;
+    font-weight: 500;
+   }
+
+   strong {
+    font-weight: 600;
    }
 
 h2 {
@@ -148,9 +153,11 @@ h3 {
     font-size: 0.9rem;
     font-weight: 600;
     padding-bottom: 0.5rem;
+    padding-top: 0.6rem;
 }
 h4 {
     font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .logo {
@@ -159,6 +166,7 @@ h4 {
 
 .project-info p {
     font-size: 0.9rem;
+
 }
 .links {
     display: flex;
@@ -217,6 +225,7 @@ figcaption h5 {
     font-size: 0.8rem;
     margin-top: 0.6rem;
     font-weight: 600;
+    letter-spacing: 0.1rem;
     
 }
 
@@ -417,7 +426,26 @@ nav li {
     margin: auto;
 }
 
+.project-info p, a {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.1rem;
+    
+      
+}
+.project-info a {
+    margin: 2.2rem  0.7rem;
+   
+    
+}
 
+.card p {
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 figure {
     margin-top: 0.4rem;
     
@@ -455,7 +483,7 @@ nav {
 
 .container, .container-projects {
     max-width: 960px;
-    padding: 0.4rem;
+    padding: 0.5rem;
     margin: auto;
 }
 
@@ -482,6 +510,24 @@ nav {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
+.project-info p, a {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    
+      
+}
+.project-info a {
+    margin: 1rem  0.3rem;
+   
+    
+}
+
+.card p {
+    max-width: 250px;
+   
+}
 figure {
     margin-top: 0.5rem;
    
@@ -501,11 +547,14 @@ figcaption h5 {
 h3 {
     padding-top: 0.8rem;
     display: center;
-    font-size: 1.4rem;
-    
+    font-size: 1.4rem;   
     
 }
 
+footer h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
 
 a {
     text-decoration: none;
