@@ -19,7 +19,7 @@ body {
     background-position:top;
     background-attachment: fixed;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 70px;
    
    
 }
@@ -114,7 +114,8 @@ nav li {
 }
 
 .container,
-.container-projects {
+.container-projects
+ {
     max-width: 80%;
     background-color: rgba(240, 248, 255, 0.5);
     backdrop-filter: blur(8px);
@@ -123,6 +124,23 @@ nav li {
     
    
 }
+
+/* .container-side {
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(8px); 
+    gap: 10px
+    
+} */
+
+
+
+.container-about, 
+.container-background {
+    font-size: 0.7rem;
+    padding: 0.9rem;
+    max-width: 500px;
+   
+} 
 
 .img-me {
         
@@ -297,6 +315,25 @@ figcaption h6 {
     
 }
 
+i {
+    margin-right: 10px;
+}
+
+.container-about {
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+
+
+/* .container-about p {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 /* Desktop with hover support */
 @media (hover: hover) {
     .card:hover .project-info {
@@ -395,8 +432,26 @@ footer a:hover {
     
    }
    
-   .container {
-    max-width: 700px;
+   .container
+   
+    {
+    max-width: 600px;
+   }
+
+   .container-about,
+   .break {
+    max-width: 600;
+    margin: auto;
+    padding: 1rem;
+   
+   }
+   .container-about h3 {
+    font-size: 0.9rem;
+   }
+
+   .container-about p {
+    font-size: 0.9rem;
+    font-weight: 500;
    }
    
 
@@ -451,7 +506,38 @@ figure {
     
 }
 
+footer h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
 }
+
+footer a{ 
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.container-about {
+    display: flex;
+    margin: auto;
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-weight: 500;
+    max-width: 900px;
+}
+}
+
 
 
 /* styling body for desktop */
@@ -481,11 +567,15 @@ nav {
  
 }
 
-.container, .container-projects {
+.container, 
+.container-projects
+{
     max-width: 960px;
     padding: 0.5rem;
     margin: auto;
 }
+
+
 
 
 
@@ -538,7 +628,6 @@ figcaption h5 {
 
 }
 
-
 .info-me h2 {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
@@ -547,29 +636,11 @@ figcaption h5 {
 h3 {
     padding-top: 0.8rem;
     display: center;
-    font-size: 1.4rem;   
+    font-size: 1.2rem;   
     
 }
 
-footer h5 {
-    font-size: 1.1rem;
-    font-weight: 700;
-}
 
-a {
-    text-decoration: none;
-}
-.links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.links a {
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
 
 h4 {
     font-size: 0.9rem;
@@ -583,12 +654,7 @@ h4 {
 
 }
 
-footer a{
-    color:rgb(25, 26, 27);
-    font-size: 1.1rem;
-    
 
-}
 
  .socials i {
     
@@ -598,14 +664,5 @@ footer a{
    font-size: 1.4rem;
  }  
 
-.web {
-    height: 260px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    padding: 0px;
-    width: 330px;
-    
-}
 }
 
