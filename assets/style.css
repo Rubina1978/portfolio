@@ -135,6 +135,12 @@ nav li {
    
 }
 
+.glass-panel {
+  display: flex;             /* enable flexbox */
+  flex-direction: column;    /* stack children vertically */
+  justify-content: center;   /* center vertically inside the panel */
+}
+
 .img-me {
         
         box-shadow: 10px 10px 10px 5px #929dae;
@@ -166,9 +172,10 @@ h3 {
     padding-bottom: 0.5rem;
     padding-top: 0.6rem;
 }
-h4 {
+h4 a{
     font-size: 0.8rem;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .logo {
@@ -318,7 +325,10 @@ i {
     
 }
 
-
+.img-icon {
+    width:10px;
+    margin-right: 10px;
+}
 
 /* .container-about p {
     margin: auto;
@@ -375,7 +385,8 @@ footer h5 {
     display: inline-block;
     justify-content: space-between;
     margin-right: 2px;
-   font-size: 0.9rem;
+   font-size: 0.8rem;
+   font-weight: 500;
    
 }
 .socials i:hover,
@@ -384,6 +395,16 @@ footer a:hover {
     
     
 
+}
+
+.img-icon {
+    width:20px;
+    margin-right: 10px;
+}
+.container-about li,
+.container-about p {
+    font-size: 0.8rem;
+    list-style: none;
 }
 
 
@@ -461,8 +482,13 @@ footer a:hover {
     margin-bottom: 20px; */
     display: flex;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
+}
+
+h4, h4 a{
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 
@@ -521,13 +547,28 @@ footer a{
     justify-content: center;
     padding: 10px;
 }
-.container-about {
+.container-about
+ {
     display: flex;
     margin: auto;
     font-size: 0.9rem;
-    padding: 1rem;
     font-weight: 500;
     max-width: 900px;
+}
+
+.container-about p,
+.container-about li {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    
+}
+ .container-about h2 {
+    font-size: 1.5 rem;
+    font-weight: 600;
+ }
+.img-icon {
+    width:30px;
+    margin-right: 20px;
 }
 }
 
@@ -556,12 +597,13 @@ nav {
 
 .info-me p {
   margin-right: 1.2rem;
-   font-size: 0.8rem;
+   font-size: 0.9rem;
  
 }
 
 .container, 
-.container-projects
+.container-projects, 
+.container-about
 {
     max-width: 960px;
     padding: 0.5rem;
@@ -569,7 +611,9 @@ nav {
 }
 
 
-
+.container-about {
+    margin-bottom: 20px;
+}
 
 
 
@@ -629,14 +673,14 @@ figcaption h5 {
 h3 {
     padding-top: 0.8rem;
     display: center;
-    font-size: 1.2rem;   
+    font-size: 1.3rem;   
     
 }
 
 
 
-h4 {
-    font-size: 0.9rem;
+h4, h4 a {
+    font-size: 1.1rem;
     padding-bottom: 8px;
     font-weight: 600;
 }
