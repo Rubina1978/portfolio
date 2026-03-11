@@ -129,17 +129,25 @@ nav li {
 .container-about {
     background-color: rgba(240, 248, 255, 0.5);
     backdrop-filter: blur(8px);
-    max-width: 300px;
+    max-width: 400px;
     padding: 20px;
     margin: auto;
+    border-radius: 5px;
    
 }
+
+.container-about ul {
+    margin: 0 auto;
+}
+
 
 .glass-panel {
   display: flex;             /* enable flexbox */
   flex-direction: column;    /* stack children vertically */
   justify-content: center;   /* center vertically inside the panel */
 }
+
+
 
 .img-me {
         
@@ -310,8 +318,6 @@ figcaption h6 {
      transition: transform 0.2s, box-shadow 0.2s;
      background-color:#b5d6e6;
     border: 1px #8b8b96;
-    /* color: white; */
-    
     
 }
 
@@ -319,23 +325,12 @@ i {
     margin-right: 10px;
 }
 
-.container-about {
-    width: 100%;
-    max-width: 500px;
-    
-}
 
 .img-icon {
     width:10px;
     margin-right: 10px;
 }
 
-/* .container-about p {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 /* Desktop with hover support */
 @media (hover: hover) {
@@ -550,34 +545,34 @@ footer a{
 .container-about
  {
     display: flex;
-    margin: auto;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
-    max-width: 900px;
+    max-width: 700px;
+   
 }
 
 .container-about p,
 .container-about li {
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    font-size: 0.7rem;
+   
     
 }
+
  .container-about h2 {
-    font-size: 1.5 rem;
+    font-size: 1.2rem;
     font-weight: 600;
  }
 .img-icon {
-    width:30px;
+    width: 20px;
     margin-right: 20px;
 }
+
 }
-
-
 
 /* styling body for desktop */
 
-@media only screen and (min-width: 992px) and (orientation: landscape) 
-{
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+
 
 .wrapper {
     width: 100%;
@@ -605,17 +600,10 @@ nav {
 .container-projects, 
 .container-about
 {
-    max-width: 960px;
-    padding: 0.5rem;
+    max-width: 1000px;
+    padding: 0.7rem;
     margin: auto;
 }
-
-
-.container-about {
-    margin-bottom: 20px;
-}
-
-
 
 .img-me {
    
@@ -677,8 +665,6 @@ h3 {
     
 }
 
-
-
 h4, h4 a {
     font-size: 1.1rem;
     padding-bottom: 8px;
@@ -691,7 +677,17 @@ h4, h4 a {
 
 }
 
+.container-about p,
+.container-about li {
+    font-size: 0.9rem;
+   
+    
+}
 
+.container-about ul li {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
  .socials i {
     
@@ -702,4 +698,3 @@ h4, h4 a {
  }  
 
 }
-
