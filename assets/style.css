@@ -83,6 +83,23 @@ nav li {
     width: 80px;
     }
 
+@media only screen and (max-width: 767.98px) {
+    nav li {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.3rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .navbar-nav li:hover {
+        width: auto;
+        padding: 0;
+    }
+}
+
 .navbar-nav li:hover {
     
     background-color:#b5d6e6 ;
@@ -114,7 +131,9 @@ nav li {
 }
 
 .container,
-.container-projects
+.container-projects,
+.container-about,
+.container-contact
  {
     max-width: 80%;
     background-color: rgba(240, 248, 255, 0.5);
@@ -122,22 +141,14 @@ nav li {
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 10px;
-    
+    margin: auto;
    
 }
 
-.container-about {
-    background-color: rgba(240, 248, 255, 0.5);
-    backdrop-filter: blur(8px);
-    max-width: 400px;
-    padding: 20px;
-    margin: auto;
-    border-radius: 5px;
-   
-}
 
 .container-about ul {
     margin: 0 auto;
+    font-weight: 500;
 }
 
 
@@ -161,7 +172,8 @@ nav li {
             
    }
 
-   .info-me p{
+   .info-me p,
+   .container-about p{
     font-size: 0.7rem;
     font-weight: 500;
    }
@@ -180,10 +192,11 @@ h3 {
     padding-bottom: 0.5rem;
     padding-top: 0.6rem;
 }
-h4 a{
+h4 {
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
+    line-height: 1rem;
 }
 
 .logo {
@@ -298,6 +311,10 @@ figcaption h6 {
     padding: 1rem;
     z-index: 10;
 }
+.project-info p {
+    font-weight: 500;
+    
+}
 
 .logo-group {
   background-color: rgba(255, 255, 255, 0.7);
@@ -326,9 +343,66 @@ i {
 }
 
 
-.img-icon {
-    width:10px;
-    margin-right: 10px;
+.img-icon
+ {
+    min-width: 25px;
+
+}
+
+.img-icon-left {
+ max-width: 20px;
+ 
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.2rem 1.8rem;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 6px 6px 8px #929dae;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    max-width: 350px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 8px 8px 12px #929dae;
+    background-color: rgba(240, 248, 255, 0.7);
+}
+
+.contact-link i {
+    font-size: 1.5rem;
+    color: rgb(25, 26, 27);
+    margin-right: 0;
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: rgb(25, 26, 27);
+    font-weight: 500;
+}
+
+.container-contact h4 {
+    max-width: 350px;
+    margin: 0 auto 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 
@@ -405,7 +479,7 @@ footer a:hover {
 
 /* tablet size body styling - don't need to include all the code just keep what you are changing and delete the rest */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
     
     body {
         padding-top: 50px;
@@ -473,17 +547,15 @@ footer a:hover {
    }
    
    h3 {
-    /* margin-top: 10px;
-    margin-bottom: 20px; */
     display: flex;
     justify-content: center;
     font-size: 1.1rem;
     
 }
 
-h4, h4 a{
+h4 {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 
@@ -493,27 +565,29 @@ nav li {
     
 .projects {
     margin: auto;
+    
 }
 
-.project-info p, a {
-    font-size: 1.3rem;
-    line-height: 1.9rem;
-    letter-spacing: 0.1rem;
+.project-info p {
+    margin: 0.35rem auto;
+    max-width: 32ch;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    letter-spacing: 0.04rem;
+    text-align: center;
     
       
 }
 .project-info a {
-    margin: 2.2rem  0.7rem;
+    margin: 0.6rem 0.4rem;
    
     
 }
 
-.card p {
-    max-width: 320px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card .project-info p {
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
 }
 figure {
     margin-top: 0.4rem;
@@ -540,36 +614,76 @@ footer a{
 .links a {
     align-items: center;
     justify-content: center;
-    padding: 10px;
-}
-.container-about
- {
-    display: flex;
-    font-size: 0.7rem;
-    font-weight: 500;
-    max-width: 700px;
-   
-}
-
-.container-about p,
-.container-about li {
-    font-size: 0.7rem;
-   
-    
-}
-
- .container-about h2 {
+    padding: 0.5rem 2rem;
     font-size: 1.2rem;
-    font-weight: 600;
- }
-.img-icon {
-    width: 20px;
-    margin-right: 20px;
 }
+.container-about ul {
+        padding-left: 0;
+    }
+
+    .container-about li {
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        column-gap: 0.55rem;
+        align-items: start;
+        margin: 0.45rem 0;
+        line-height: 1.35;
+    }
+
+    .container-about .img-icon {
+        width: 20px;
+        min-width: 20px;
+        margin-right: 0;
+        margin-bottom: 0 !important;
+        margin-top: 0.15rem;
+    }
+
+    footer .email-block,
+    footer .col-12.col-lg-6.mt-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        flex-wrap: nowrap;
+    }
+
+    footer h5, 
+    footer a {
+        font-size: 0.9rem;
+    }
+    footer .col-12.col-lg-6.mt-2 {
+        margin-top: 0 !important;
+    }
+
+    footer h5 {
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    footer a {
+        white-space: nowrap;
+    }
+
+    footer .row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer .row > .col-12 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
 }
-
 /* styling body for desktop */
+
+@media only screen and (min-width: 992px) {
+   footer .col-12.col-lg-6.mt-2 {
+       margin-top: 0 !important;
+   }
+}
 
 @media only screen and (min-width: 992px) and (orientation: landscape) {
 
@@ -598,12 +712,16 @@ nav {
 
 .container, 
 .container-projects, 
-.container-about
+.container-about,
+.container-contact
+
 {
     max-width: 1000px;
     padding: 0.7rem;
     margin: auto;
 }
+
+
 
 .img-me {
    
@@ -626,21 +744,26 @@ nav {
     margin-bottom: 50px;
 }
 
-.project-info p, a {
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-    letter-spacing: 0.1rem;
+ .card .project-info p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        max-width: 30ch;
+    }
+.project-info p{
+    font-size: 0.6rem;
+   
     
       
 }
 .project-info a {
-    margin: 1rem  0.3rem;
+    margin: 0.9rem  0.3rem;
+    padding: 0.3rem 1rem;
    
     
 }
 
 .card p {
-    max-width: 250px;
+    max-width: 300px;
    
 }
 figure {
@@ -672,8 +795,9 @@ h4, h4 a {
 }
 .custom-btn {
     font-size: 0.9rem;
-     padding: 5px 8px 5px;
-     margin-bottom: 0.5rem;
+     margin-bottom: 0.2rem;
+     margin-right: 1rem;
+    
 
 }
 
@@ -684,10 +808,19 @@ h4, h4 a {
     
 }
 
+.container-contact {
+    margin: auto;
+}
+
 .container-about ul li {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+footer h5, 
+    footer a {
+        font-size: 1.1rem;
+    }
 
  .socials i {
     
@@ -698,3 +831,5 @@ h4, h4 a {
  }  
 
 }
+
+
