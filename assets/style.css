@@ -98,6 +98,26 @@ nav li {
         width: auto;
         padding: 0;
     }
+
+    .logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .logo-group {
+        padding: 3px 7px;
+        margin: 0 3px 7px;
+        gap: 4px;
+        min-height: 34px;
+    }
+
+    .logo-group .logo {
+        flex: 0 0 24px;
+    }
+
+    .tech-label {
+        font-size: 0.68rem;
+    }
 }
 
 .navbar-nav li:hover {
@@ -135,13 +155,13 @@ nav li {
 .container-about,
 .container-contact
  {
-    max-width: 1150%;
+    width: min(94%, 1000px);
+    max-width: 1000px;
     background-color: rgba(240, 248, 255, 0.5);
     backdrop-filter: blur(8px);
-    margin-bottom: 20px;
     border-radius: 5px;
     padding: 10px;
-    margin: auto;
+    margin: 0 auto 20px;
    
 }
 
@@ -192,6 +212,14 @@ h3 {
     padding-bottom: 0.5rem;
     padding-top: 0.6rem;
 }
+
+.container-about h2,
+.container-about h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    padding-top: 0.6rem;
+}
 h4 {
     font-size: 0.8rem;
     font-weight: 600;
@@ -200,7 +228,9 @@ h4 {
 }
 
 .logo {
-    max-width: 40px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .project-info p {
@@ -348,17 +378,24 @@ figcaption h6 {
 .logo-group {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 6px 6px 8px #929dae;
-  padding: 2px 4px;
-  margin-bottom: 6px;
+  padding: 4px 8px;
+  margin: 0 4px 8px;
   border-radius: 6px;
-  display: inline-block;
-  margin-right: 6px;
-  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 38px;
+  vertical-align: top;
 }
 
 .logo-group .logo {
-  margin-right: 5px;
-  vertical-align: middle;
+  flex: 0 0 28px;
+}
+
+.tech-label {
+  font-size: 0.72rem;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .logo-group:hover {
@@ -545,19 +582,20 @@ footer a:hover {
     
    }
    
-   .container
-   
-    {
-    max-width: 600px;
+   .container,
+   .container-about,
+   .container-contact {
+    width: min(94%, 720px);
+    max-width: 720px;
    }
 
-   .container-about,
    .break {
-    max-width: 600;
+    max-width: 720px;
     margin: auto;
     padding: 1rem;
    
    }
+   .container-about h2,
    .container-about h3 {
     font-size: 0.9rem;
    }
@@ -601,6 +639,26 @@ nav li {
 .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.2rem;
+}
+
+.logo {
+    width: 26px;
+    height: 26px;
+}
+
+.logo-group {
+    padding: 4px 7px;
+    margin: 0 3px 8px;
+    gap: 5px;
+    min-height: 36px;
+}
+
+.logo-group .logo {
+    flex: 0 0 26px;
+}
+
+.tech-label {
+    font-size: 0.7rem;
 }
 
 .project-info p {
@@ -786,7 +844,7 @@ nav {
 }
 
  .card .project-info p {
-        font-size: 0.72rem;
+        font-size: 1rem;
         line-height: 1.35;
         max-width: 32ch;
     }
@@ -827,6 +885,11 @@ h3 {
     display: center;
     font-size: 1.3rem;   
     
+}
+
+.container-about h2,
+.container-about h3 {
+    font-size: 1.3rem;
 }
 
 h4, h4 a {
