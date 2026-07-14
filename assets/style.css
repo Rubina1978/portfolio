@@ -83,42 +83,6 @@ nav li {
     width: 80px;
     }
 
-@media only screen and (max-width: 767.98px) {
-    nav li {
-        width: auto;
-        margin-right: 0;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 0.3rem 0.75rem;
-        font-size: 0.85rem;
-    }
-
-    .navbar-nav li:hover {
-        width: auto;
-        padding: 0;
-    }
-
-    .logo {
-        width: 24px;
-        height: 24px;
-    }
-
-    .logo-group {
-        padding: 3px 7px;
-        margin: 0 3px 7px;
-        gap: 4px;
-        min-height: 34px;
-    }
-
-    .logo-group .logo {
-        flex: 0 0 24px;
-    }
-
-    .tech-label {
-        font-size: 0.68rem;
-    }
-}
 
 .navbar-nav li:hover {
     
@@ -421,57 +385,101 @@ i {
  
 }
 
-.contact-cards {
+.contact-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.2rem;
-    margin-top: 2rem;
+    gap: 40px;     
 }
 
-.contact-link {
+
+.contact-text{
+    flex:1;
+    padding:0 50px;
+    text-align: left;
+    margin-left: 60px;
+  
+}
+
+.contact-text p {
+    font-weight: 500;
+}
+
+.contact-cards{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-right: 40px
+}
+.contact-icon {
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding: 1.2rem 1.8rem;
-    background-color: rgba(240, 248, 255, 0.5);
-    border-radius: 8px;
-    box-shadow: 6px 6px 8px #929dae;
-    backdrop-filter: blur(8px);
-    width: 100%;
-    max-width: 350px;
+    color: black;
+    font-size: 20px;
+}
+
+.simple-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
+    width: 250px;
+    color: black;
 }
 
-.contact-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 8px 8px 12px #929dae;
-    background-color: rgba(240, 248, 255, 0.7);
+.simple-contact i {
+    font-size: 30px;
+    color: black
 }
 
-.contact-link i {
-    font-size: 1.5rem;
-    color: rgb(25, 26, 27);
-    margin-right: 0;
-}
+@media only screen and (max-width: 767.98px) {
+    nav li {
+        width: auto;
+        margin-right: 0;
+    }
 
-.contact-link a {
-    text-decoration: none;
-    color: rgb(25, 26, 27);
-    font-weight: 500;
-}
+    .navbar-nav .nav-link {
+        padding: 0.3rem 0.75rem;
+        font-size: 0.85rem;
+    }
 
-.container-contact h4 {
-    max-width: 350px;
-    margin: 0 auto 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-}
+    .navbar-nav li:hover {
+        width: auto;
+        padding: 0;
+    }
 
+    .logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .logo-group {
+        padding: 3px 7px;
+        margin: 0 3px 7px;
+        gap: 4px;
+        min-height: 34px;
+    }
+
+    .logo-group .logo {
+        flex: 0 0 24px;
+    }
+
+    .tech-label {
+        font-size: 0.68rem;
+    }
+
+    .contact-cards {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+}
 
 /* Desktop with hover support */
 @media (hover: hover) {
@@ -507,18 +515,21 @@ i {
 footer a{
     color:rgb(25, 26, 27);
     font-size: 0.8rem;
-   
 
 }
 
-footer h5 {
+footer p {
     font-size: 0.9rem;
     font-weight: 700;
+    margin-right: 10px;
 }
+ .social-links {
+    display: inline-flex;
 
+ }
  .socials i {
     
-    display: inline-block;
+    display: flex;
     justify-content: space-between;
     margin-right: 2px;
    font-size: 0.8rem;
@@ -790,6 +801,7 @@ footer a{
    .project-grid > [class*="col-"] {
        width: 100%;
    }
+ 
 }
 
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -933,6 +945,7 @@ footer h5,
     margin-right: 2px;
    font-size: 1.4rem;
  }  
+
 
 }
 
